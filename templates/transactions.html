@@ -44,21 +44,15 @@
                 <div>
                     <table>
                         <tr>
-                            <th>Transaction Hash</th>
                             <th>From</th>
                             <th>To</th>
                             <th>Value (ETH)</th>
-                            <th>Block Number</th>
-                            <th>Timestamp</th>
                         </tr>
                         {% for tx in transactions %}
                         <tr >
-                            <td >{{ tx.hash }}</td>
                             <td>{{ tx.from }}</td>
                             <td>{{ tx.to }}</td>
-                            <td>{{ tx.value }}</td>
-                            <td>{{ tx.blockNumber }}</td>
-                            <td>{{ tx.timeStamp }}</td>
+                            <td>{{ tx.amount }}</td>
                         </tr>
                         {% endfor %}
                     </table>
